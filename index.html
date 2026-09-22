@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Touchless OS | AI-Powered Virtual Trackpad & Mouse</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Background Glow Gradients -->
+  <div class="glow-bg top-left"></div>
+  <div class="glow-bg bottom-right"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <span class="logo-icon">🖐️</span>
+        <span class="logo-text">Touchless<span class="highlight">OS</span></span>
+      </div>
+      <nav class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#gestures">Gestures</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#download" class="nav-btn-download">Download v1.0</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-container">
+      <div class="badge-tag">⚡ ZERO-LATENCY AI VIRTUAL TRACKPAD</div>
+      <h1 class="hero-title">
+        Control Your Computer <br />
+        <span class="gradient-text">Without Touching It</span>
+      </h1>
+      <p class="hero-subtitle">
+        Turn your ordinary laptop webcam into a futuristic AI trackpad.
+        Move the Windows cursor using your palm, click with subtle pinches,
+        and drag & drop files across all of Windows—no physical mouse required.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#download" class="btn btn-primary">
+          <span class="btn-icon">⬇️</span> Download for Windows (Free)
+        </a>
+        <a href="#gestures" class="btn btn-secondary">
+          <span>🖐️</span> See Gesture Controls
+        </a>
+      </div>
+
+      <!-- Live Mockup Preview Box -->
+      <div class="preview-box">
+        <div class="preview-header">
+          <div class="dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="preview-title">📹 MINI SENSOR HUD &amp; TELEMETRY (LIVE)</span>
+          <span class="fps-badge">60 FPS</span>
+        </div>
+        <div class="preview-body">
+          <div class="hud-screen">
+            <div class="tracking-box">
+              <div class="reticle"></div>
+              <span class="reticle-label">PALM ANCHOR</span>
+            </div>
+            <div class="hud-telemetry">
+              <span>CURSOR: (1280, 720)</span>
+              <span class="action-glow">ACTION: ⚡ Left Click</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gesture Cards Section -->
+  <section id="gestures" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">INTUITIVE CONTROLS</span>
+        <h2 class="section-title">Natural Hand Gestures</h2>
+        <p class="section-subtitle">Engineered with palm-centroid stability so your cursor glides like a MacBook trackpad without jitter.</p>
+      </div>
+
+      <div class="gestures-grid">
+        <div class="gesture-card">
+          <div class="gesture-emoji">🖐️</div>
+          <h3>Move Pointer</h3>
+          <p>Move your hand naturally. The cursor locks onto your stable palm center, preventing twitching.</p>
+          <span class="gesture-badge">Open Palm</span>
+        </div>
+
+        <div class="gesture-card">
+          <div class="gesture-emoji">🤏</div>
+          <h3>Left Click</h3>
+          <p>Pinch your Index Fingertip to your Thumb Tip to click any desktop icon, link, or button.</p>
+          <span class="gesture-badge">Index Pinch</span>
+        </div>
+
+        <div class="gesture-card">
+          <div class="gesture-emoji">✌️</div>
+          <h3>Right Click</h3>
+          <p>Pinch your Middle Fingertip to your Thumb Tip to instantly open context menus.</p>
+          <span class="gesture-badge">Middle Pinch</span>
+        </div>
+
+        <div class="gesture-card">
+          <div class="gesture-emoji">✊</div>
+          <h3>Drag &amp; Drop</h3>
+          <p>Clench into a fist to hold down the mouse button. Move your hand to drag, open palm to release.</p>
+          <span class="gesture-badge">Fist (Hold)</span>
+        </div>
+
+        <div class="gesture-card">
+          <div class="gesture-emoji">📜</div>
+          <h3>Smooth Scrolling</h3>
+          <p>Extend two fingers and move your hand up or down to scroll through web pages and documents.</p>
+          <span class="gesture-badge">Two Fingers</span>
+        </div>
+
+        <div class="gesture-card">
+          <div class="gesture-emoji">⏸️</div>
+          <h3>Safety Pause</h3>
+          <p>Toggle pause mode whenever you want to rest your hands or use your normal physical mouse.</p>
+          <span class="gesture-badge">HUD Toggle</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="section bg-surface">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">ENGINEERING HIGHLIGHTS</span>
+        <h2 class="section-title">Why Touchless OS Stands Out</h2>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon">🚀</div>
+          <h3>Zero-Latency Windows API</h3>
+          <p>Interfaces directly with Windows native cursor hooks (<code>user32.SetCursorPos</code>), delivering 0.0ms cursor responsiveness.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon">📦</div>
+          <h3>100% Portable (No Setup)</h3>
+          <p>End users don't need Python, VS Code, or libraries. Just download, extract, and launch <code>TouchlessOS.exe</code>!</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon">🎯</div>
+          <h3>Anti-Jitter Smoothing Filter</h3>
+          <p>Exponential Moving Average (EMA) mathematical filters eliminate camera sensor noise and shaky cursor movements.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon">📌</div>
+          <h3>Always-On-Top Mini HUD</h3>
+          <p>A compact, floating camera HUD stays pinned in the corner of your screen without blocking desktop windows.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">SUPER SIMPLE SETUP</span>
+        <h2 class="section-title">How To Use (3 Steps)</h2>
+      </div>
+
+      <div class="steps-container">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <h3>Download the ZIP</h3>
+          <p>Download the official <code>TouchlessOS_v1.0_Windows.zip</code> release package.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <h3>Extract the Folder</h3>
+          <p>Right-click the downloaded zip file and select <strong>"Extract All..."</strong>.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <h3>Launch TouchlessOS.exe</h3>
+          <p>Double-click <strong>TouchlessOS.exe</strong>. Allow camera permissions and start waving your hand!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Section -->
+  <section id="download" class="section download-section">
+    <div class="container">
+      <div class="download-card">
+        <span class="section-tag">READY FOR WINDOWS</span>
+        <h2 class="download-title">Download Touchless OS Today</h2>
+        <p class="download-desc">
+          Compatible with Windows 10 &amp; Windows 11. No Python, VS Code, or complex dependencies needed.
+        </p>
+
+        <!-- Direct Download Link Button -->
+        <div class="download-button-wrapper">
+          <a id="download-btn" href="TouchlessOS_v1.0_Windows.zip" download="TouchlessOS_v1.0_Windows.zip" class="btn btn-download-primary">
+            <span class="download-icon">⬇️</span>
+            <div class="btn-text">
+              <span class="main-text">Download TouchlessOS.zip</span>
+              <span class="sub-text">Windows 10/11 (64-bit) • v1.0.0</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="download-meta">
+          <span>✔️ 100% Free &amp; Open Source</span>
+          <span>✔️ Zero Spyware / Adware</span>
+          <span>✔️ Standalone Portable Application</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span>🖐️ Touchless OS — Built with Python, OpenCV &amp; MediaPipe.</span>
+      </div>
+      <div class="footer-right">
+        <span>Designed for College Mini-Project &amp; Touchless Accessibility</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
